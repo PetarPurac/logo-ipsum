@@ -30,13 +30,25 @@
 
 body {
     background-color: $purple;
+
 }
 
-.svga {
-    width: 100px;
-    height: 100px;
-    // background-image: url('./images/content/logoa.svglogo.svg');
-    background-image: url('../images/content/logoa.svg');
-    background-color: $orange;
-    /* Other background properties */
+html {
+    scroll-behavior: smooth;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: rgba($white, .3);
+    color: white;
+    opacity: 0;
+}
+
+.skip-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
 }

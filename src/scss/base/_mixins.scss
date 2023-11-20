@@ -118,3 +118,11 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@mixin hover {
+  @media only screen and (min-width: 1025px) {
+    .no-touch-device &:hover {
+      @content;
+    }
+  }
+}

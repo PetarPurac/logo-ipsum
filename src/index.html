@@ -9,37 +9,70 @@
     <meta name="author" content="Petar Purać">
   </head>
   <body>
-    <header class="header">
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    <header class="header js-header">
       <div class="wrap wrap--lg">
         <div class="header__wrap">
-          <div class="header__logo">
-            <img class="header__logo-item" src="./images/content/logo.png" alt="">
-          </div>
-          <nav class="nav" role="navigation" aria-label="main">
+          <a href="#" class="header__logo">
+            <img class="header__logo-item" src="./images/content/logo.png" alt="company logo">
+          </a>
+          <button class="header__hamburger js-header-hamburger" aria-expanded="false" aria-label="Main Menu">
+            <span class="sr-only">Toggle Navigation</span>
+            <svg width="30" height="30" viewBox="0 0 100 100">
+              <path class="header__hamburger-line header__hamburger-line--first line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="header__hamburger-line header__hamburger-line--second line line2" d="M 20,50 H 80" />
+              <path class="header__hamburger-line header__hamburger-line--third line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
+          <nav class="nav js-nav" aria-label="main">
             <ul class="nav__list">
               <li class="nav__list-item">
-                <a href="#" class="nav__list-link text text--sm">Home</a>
+                <a href="#home" class="nav__list-link text text--sm">Home</a>
               </li>
               <li class="nav__list-item">
-                <a href="#" class="nav__list-link text text--sm">Documentation</a>
+                <a href="#documentation" class="nav__list-link text text--sm">Documentation</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <main>
+    <main class="main js-main" id="main-content">
       <div class="wrap wrap--sm">
         <img src="images/content/header.png" alt="Webpack 5 Template Boilerplate">
         <h1>Demo page illustrating building of SASS, PostCSS, JavaScript, Fonts, Background Images and Inline Images.</h1>
+      </div>
+      <div>
+        <a href="Aaa">aa</a>
       </div>
       <!-- <video width="1024" height="576" controls>
         <source src="videos/video.webm" type="video/webm">
         Your browser does not support the video tag.
       </video> -->
     </main>
-    <footer>
-      <p class="text text--body">Footer</p>
+    <footer class="footer">
+      <div class="wrap wrap--small">
+        <div class="footer__wrap">
+          <a href="#" class="footer__logo">
+            <img class="footer__logo-item" src="./images/content/logo.png" alt="company logo">
+          </a>
+          <nav class="footer__nav" aria-label="footer">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#home" class="text text--sm footer__nav-link">Home</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#documentation" class="text text--sm footer__nav-link">Documentation</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#starttoday" class="text text--sm footer__nav-link">Start Today</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="socials socials--sm socials--grid">
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
