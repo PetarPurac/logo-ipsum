@@ -1,0 +1,54 @@
+.image-block {
+    padding: 190px 0;
+    position: relative;
+
+    @include breakpoint-down(md) {
+        padding: 140px 0;
+    }
+}
+
+.image-block__dots-red {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include breakpoint-down(md) {
+        top: 0;
+        left: 3px;
+        z-index: -1;
+        transform: translateY(30%);
+    }
+}
+
+.image-block__dots-blue {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @include breakpoint-between(sm, md) {
+        right: 20px;
+        bottom: -7%;
+    }
+
+    @include breakpoint-down(md) {
+        transform-origin: right;
+        transform: rotate(90deg) translateY(50%);
+    }
+
+    @include breakpoint-down(sm) {
+        bottom: 0;
+        right: 22px;
+        z-index: -1;
+    }
+}
+
+.image-block__arrows {
+    top: 2%;
+    left: 45.5%;
+
+    @include breakpoint-down(sm) {
+        top: 2%;
+        right: 16%;
+        left: unset;
+    }
+}

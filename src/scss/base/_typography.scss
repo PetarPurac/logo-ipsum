@@ -8,19 +8,29 @@ h5 {
 }
 
 h1 {
-    @include breakpoint-up(md) {
+    @include breakpoint-up(lg) {
         font-size: 113px;
         line-height: 132px;
     }
 
-    @include breakpoint-between(sm, md) {
+    @include breakpoint-between(md, lg) {
         font-size: 90px;
         line-height: 110px;
     }
 
-    @include breakpoint-down(sm) {
+    @include breakpoint-between(sm, md) {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    @include breakpoint-between(xs, sm) {
         font-size: 60px;
         line-height: 70px;
+    }
+
+    @include breakpoint-down(xs) {
+        font-size: 42px;
+        line-height: 62px;
     }
 }
 

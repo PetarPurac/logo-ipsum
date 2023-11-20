@@ -1,6 +1,18 @@
 .banner {
-    padding-top: 180px;
     position: relative;
+    margin-bottom: 79px;
+
+    @include breakpoint-up(md) {
+        padding-top: 180px;
+    }
+
+    @include breakpoint-between(sm, md) {
+        padding-top: 90px;
+    }
+
+    @include breakpoint-down(sm) {
+        padding-top: 80px;
+    }
 }
 
 .banner__title {
@@ -10,7 +22,10 @@
     @include breakpoint-up(md) {
         padding-left: 60px;
         margin-bottom: 30px;
+    }
 
+    @include breakpoint-down(md) {
+        margin-bottom: 40px;
     }
 }
 
@@ -18,6 +33,15 @@
     margin-left: auto;
     width: fit-content;
     max-width: 40.5%;
+
+    @include breakpoint-between(sm, md) {
+        max-width: 54.5%;
+    }
+
+    @include breakpoint-down(sm) {
+        max-width: 100%;
+        margin-left: unset;
+    }
 }
 
 .banner__text {
@@ -26,7 +50,10 @@
 
     @include breakpoint-up(md) {
         margin-bottom: 29px;
+    }
 
+    @include breakpoint-down(md) {
+        margin-bottom: 40px;
     }
 }
 
@@ -48,16 +75,38 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    transition: transform .3s ease;
 }
 
 .banner__hexaeder {
     position: absolute;
     top: -1%;
     left: 50%;
+
+    @include breakpoint-down(md) {
+        top: 0;
+    }
 }
 
 .banner__atom-hexaeder {
     position: absolute;
     bottom: 5%;
-    left: 35%;
+
+    @include breakpoint-up(md) {
+        left: 35%;
+    }
+
+    @include breakpoint-between(sm, md) {
+        left: 15%;
+    }
+
+    @include breakpoint-between(xs, sm) {
+        bottom: 2%;
+        left: 75%;
+    }
+
+    @include breakpoint-down(xs) {
+        bottom: -18%;
+        left: 10%;
+    }
 }
