@@ -109,37 +109,10 @@
 
 .nav__list-link {
     color: $white;
-    position: relative;
-
-    @include breakpoint-up(md) {
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 0;
-            height: 1px;
-            background-color: $white;
-            border-radius: 50%;
-            transition: width .3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    }
 
     @include breakpoint-down(md) {
         color: $purple;
         font-weight: $normal;
-    }
-
-    @include hover {
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: unset;
-            left: 0;
-            width: 100%;
-            height: 1px;
-        }
     }
 }
 

@@ -39,7 +39,7 @@ const header = {
                 this.main.style.paddingTop = `${this.header.offsetHeight}px`
             } else {
                 this.header.classList.remove(this.headerStickyClass);
-                this.main.style.paddingTop = `0px`
+                this.main.style.paddingTop = `0`
             }
         })
     },
