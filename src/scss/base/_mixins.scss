@@ -32,30 +32,6 @@
   }
 }
 
-//Placeholders
-//Usage:
-//@include placeholder;
-@mixin placeholder {
-
-  // sass-lint:disable no-vendor-prefixes
-  ::-webkit-input-placeholder {
-    @content
-  }
-
-  :-moz-placeholder {
-    @content
-  }
-
-  ::-moz-placeholder {
-    @content
-  }
-
-  :-ms-input-placeholder {
-    @content
-  }
-}
-
-
 // Mixin to generate media queries for breakpoints and above
 @mixin breakpoint-up($point) {
   @if map-has-key($breakpoints, $point) {
