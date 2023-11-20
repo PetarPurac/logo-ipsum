@@ -48,8 +48,8 @@ h2 {
     }
 
     @include breakpoint-down(sm) {
-        font-size: 44px;
-        line-height: 58px;
+        font-size: 38px;
+        line-height: 46px;
     }
 }
 
@@ -65,8 +65,8 @@ h3 {
     }
 
     @include breakpoint-down(sm) {
-        font-size: 34px;
-        line-height: 48px;
+        font-size: 32px;
+        line-height: 44px;
     }
 }
 
