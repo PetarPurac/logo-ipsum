@@ -4,9 +4,6 @@
 /* CSS Reset */
 @import 'base/reset';
 
-/* CSS print */
-@import 'base/print';
-
 /* Fonts */
 @import 'base/fonts';
 
@@ -23,3 +20,4 @@
 @import 'components/shared/header';
 @import 'components/shared/footer';
 @import 'components/shared/socials';
+@import 'components/banner';

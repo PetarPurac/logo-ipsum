@@ -1,0 +1,63 @@
+.banner {
+    padding-top: 180px;
+    position: relative;
+}
+
+.banner__title {
+    color: $white;
+    text-transform: uppercase;
+
+    @include breakpoint-up(md) {
+        padding-left: 60px;
+        margin-bottom: 30px;
+
+    }
+}
+
+.banner__content {
+    margin-left: auto;
+    width: fit-content;
+    max-width: 40.5%;
+}
+
+.banner__text {
+    text-align: left;
+    color: $white;
+
+    @include breakpoint-up(md) {
+        margin-bottom: 29px;
+
+    }
+}
+
+.banner__cta {
+    padding-bottom: 49px;
+    padding-right: 80px;
+    width: fit-content;
+    position: relative;
+}
+
+.banner__cta-btn {
+    text-transform: uppercase;
+    font-weight: $bold;
+    color: $purple;
+    letter-spacing: 0.05em;
+}
+
+.banner__cta-shape {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.banner__hexaeder {
+    position: absolute;
+    top: -1%;
+    left: 50%;
+}
+
+.banner__atom-hexaeder {
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+}

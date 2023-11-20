@@ -1,5 +1,11 @@
 .footer {
     position: relative;
+
+    @include breakpoint-down(xl) {
+        overflow-x: hidden;
+        padding-top: 40px;
+    }
+
 }
 
 .footer__top {
@@ -8,18 +14,52 @@
     max-width: 1016px;
     width: 100%;
     padding-bottom: 104px;
+
+    @include breakpoint-down(md) {
+        flex-direction: column;
+    }
 }
 
 .footer__logo {
-    margin-right: 15%;
+    @include breakpoint-up(md) {
+        margin-right: 15%;
+    }
+
+    @include breakpoint-between(sm, md) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint-down(sm) {
+        margin-bottom: 45px;
+    }
 }
 
 .footer__logo-item {
-    width: 280px;
+    @include breakpoint-up(md) {
+        width: 280px;
+    }
+
+    @include breakpoint-between(sm, md) {
+        width: 230px;
+    }
+
+    @include breakpoint-down(sm) {
+        width: 200px;
+    }
 }
 
 .footer__nav {
-    margin-right: 11.8%;
+    @include breakpoint-up(md) {
+        margin-right: 11.8%;
+    }
+
+    @include breakpoint-between(sm, md) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint-down(sm) {
+        margin-bottom: 45px;
+    }
 }
 
 .footer__nav-item {
@@ -33,9 +73,18 @@
 }
 
 .footer__dots {
-    position: relative;
-    bottom: -19px;
-    right: -23.6%;
+    @include breakpoint-up(xl) {
+        position: relative;
+        bottom: -19px;
+        right: -23.6%;
+    }
+
+    @include breakpoint-down(xl) {
+        position: absolute;
+        right: -210px;
+        bottom: 0;
+        z-index: -1;
+    }
 }
 
 .footer__bottom {
@@ -50,5 +99,8 @@
     color: $white;
     text-align: center;
     position: relative;
-    right: -16%;
+
+    @include breakpoint-up(xl) {
+        right: -16%;
+    }
 }

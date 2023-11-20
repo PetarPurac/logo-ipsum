@@ -1,5 +1,5 @@
 .main {
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .wrap {
@@ -81,4 +81,58 @@ html {
             height: 1px;
         }
     }
+}
+
+.cta-btn {
+    // width: 248px;
+    // height: 50px;
+    // min-width: 248px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    padding: 0 20px;
+
+
+    &::before {
+        content: '';
+        background-image: url('../images/design/btn.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        z-index: -1;
+        position: absolute;
+    }
+}
+
+.cta-btn--md {
+    min-width: 248px;
+    height: 50px;
+}
+
+.cta-btn--lg {
+    height: 65px;
+    min-width: 217px;
+
+    &::before {
+        background-image: url('../images/design/btn-lg.svg');
+    }
+}
+
+.cta-btn--sm {
+    height: 50px;
+    min-width: 200px;
+
+    &::before {
+        background-image: url('../images/design/btn.svg');
+    }
+}
+
+.text--yellow {
+    color: $yellow;
 }
