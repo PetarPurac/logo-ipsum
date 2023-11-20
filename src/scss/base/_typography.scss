@@ -8,12 +8,12 @@ h5 {
 }
 
 h1 {
-    @include breakpoint-up(lg) {
+    @include breakpoint-up(md) {
         font-size: 113px;
         line-height: 132px;
     }
 
-    @include breakpoint-only(md) {
+    @include breakpoint-between(sm, md) {
         font-size: 90px;
         line-height: 110px;
     }
@@ -27,12 +27,12 @@ h1 {
 h2 {
     letter-spacing: -0.03em;
 
-    @include breakpoint-up(lg) {
+    @include breakpoint-up(md) {
         font-size: 94px;
         line-height: 110px;
     }
 
-    @include breakpoint-only(md) {
+    @include breakpoint-between(sm, md) {
         font-size: 70px;
         line-height: 84px;
     }
@@ -44,12 +44,12 @@ h2 {
 }
 
 h3 {
-    @include breakpoint-up(lg) {
+    @include breakpoint-up(md) {
         font-size: 54px;
         line-height: 77px;
     }
 
-    @include breakpoint-only(md) {
+    @include breakpoint-between(sm, md) {
         font-size: 44px;
         line-height: 63px;
     }
@@ -61,12 +61,12 @@ h3 {
 }
 
 h4 {
-    @include breakpoint-up(lg) {
+    @include breakpoint-up(md) {
         font-size: 44px;
         line-height: 50px;
     }
 
-    @include breakpoint-only(md) {
+    @include breakpoint-between(sm, md) {
         font-size: 36px;
         line-height: 41px;
     }
@@ -80,12 +80,12 @@ h4 {
 h5 {
     letter-spacing: -0.02em;
 
-    @include breakpoint-up(lg) {
+    @include breakpoint-up(md) {
         font-size: 30px;
         line-height: 30px;
     }
 
-    @include breakpoint-only(md) {
+    @include breakpoint-between(sm, md) {
         font-size: 24px;
         line-height: 24px;
     }
@@ -103,12 +103,13 @@ h5 {
 }
 
 .text--body {
-    @include breakpoint-up(lg) {
+    @include breakpoint-up(md) {
         font-size: 30px;
         line-height: 33px;
     }
 
-    @include breakpoint-only(md) {
+
+    @include breakpoint-between(sm, md) {
         font-size: 24px;
         line-height: 27px;
     }
@@ -120,12 +121,12 @@ h5 {
 }
 
 .text--sm {
-    @include breakpoint-up(lg) {
+    @include breakpoint-up(md) {
         font-size: 28px;
         line-height: 32px;
     }
 
-    @include breakpoint-only(md) {
+    @include breakpoint-between(sm, md) {
         font-size: 22px;
         line-height: 25px;
     }

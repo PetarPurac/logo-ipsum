@@ -80,3 +80,41 @@
     @error "Unknown breakpoint: #{$point}. Please use one of #{map-keys($breakpoints)}.";
   }
 }
+
+// Mixin to generate media queries for a range between two breakpoints
+@mixin breakpoint-between($point1, $point2) {
+  $keys: map-keys($breakpoints);
+  $index1: index($keys, $point1);
+  $index2: index($keys, $point2);
+
+  $min: if($index1, map-get($breakpoints, $point1), null);
+  $max: if($index2, map-get($breakpoints, $point2) - 1, null);
+
+  @if $min and $max {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "Unknown breakpoints: #{$point1}, #{$point2}. Please use valid breakpoints defined in #{map-keys($breakpoints)}.";
+  }
+}
+
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-vertical-center-space {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

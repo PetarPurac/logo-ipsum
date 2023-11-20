@@ -2,29 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Webpack Boilerplate Starter Template</title>
-    <meta name="description" content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools.">
-    <meta name="keywords" content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript">
+    <title>Logo Ipsum Website</title>
+    <meta name="description" content="Logo Ipsum Website">
+    <meta name="keywords" content="Logo Ipsum, Logo Ipsum Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Petar Purać">
   </head>
   <body>
     <header class="header">
       <div class="wrap wrap--lg">
-        <div class="svga"></div>
-        <img src="./images/content/logoa.svg" alt="">
+        <div class="header__wrap">
+          <div class="header__logo">
+            <img class="header__logo-item" src="./images/content/logo.png" alt="">
+          </div>
+          <nav class="nav" role="navigation" aria-label="main">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link text text--sm">Home</a>
+              </li>
+              <li class="nav__list-item">
+                <a href="#" class="nav__list-link text text--sm">Documentation</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
-      <div class="wrap">
+      <div class="wrap wrap--sm">
         <img src="images/content/header.png" alt="Webpack 5 Template Boilerplate">
         <h1>Demo page illustrating building of SASS, PostCSS, JavaScript, Fonts, Background Images and Inline Images.</h1>
       </div>
-      
-      <video width="1024" height="576" controls>
+      <!-- <video width="1024" height="576" controls>
         <source src="videos/video.webm" type="video/webm">
         Your browser does not support the video tag.
-      </video>
+      </video> -->
     </main>
     <footer>
       <p class="text text--body">Footer</p>
