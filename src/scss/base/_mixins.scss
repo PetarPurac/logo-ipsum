@@ -1,0 +1,106 @@
+/**
+ * Helper mixins
+*/
+
+// Clearfix
+// http://www.cssmojo.com/latest_new_clearfix_so_far/
+// Other clearfix options: https://github.com/stubbornella/oocss/blob/master/oocss/src/components/utils/_clearfix-me.scss
+@import 'variables';
+
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+// Text selection
+@mixin text-selection($color-selection, $color-selection-bg) {
+  ::-moz-selection {
+    // sass-lint:disable-line no-vendor-prefixes
+    background: $color-selection-bg;
+    color: $color-selection;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: $color-selection-bg;
+    color: $color-selection;
+    text-shadow: none;
+  }
+}
+
+//Placeholders
+//Usage:
+//@include placeholder;
+@mixin placeholder {
+
+  // sass-lint:disable no-vendor-prefixes
+  ::-webkit-input-placeholder {
+    @content
+  }
+
+  :-moz-placeholder {
+    @content
+  }
+
+  ::-moz-placeholder {
+    @content
+  }
+
+  :-ms-input-placeholder {
+    @content
+  }
+}
+
+
+// Mixin to generate media queries for breakpoints and above
+@mixin breakpoint-up($point) {
+  @if map-has-key($breakpoints, $point) {
+    @media (min-width: map-get($breakpoints, $point)) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "Unknown breakpoint: #{$point}. Please use one of #{map-keys($breakpoints)}.";
+  }
+}
+
+// Mixin to generate media queries for specific breakpoints only
+@mixin breakpoint-only($point) {
+  $keys: map-keys($breakpoints);
+  $index: index($keys, $point);
+
+  @if $index {
+    $next: nth($keys, $index + 1);
+
+    @media (min-width: map-get($breakpoints, $point)) and (max-width: if($next, map-get($breakpoints, $next) - 1, null)) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "Unknown breakpoint: #{$point}. Please use one of #{map-keys($breakpoints)}.";
+  }
+}
+
+// Mixin to generate media queries for breakpoints and below
+@mixin breakpoint-down($point) {
+  @if map-has-key($breakpoints, $point) {
+    $keys: map-keys($breakpoints);
+    $index: index($keys, $point);
+
+    $max: if($index, map-get($breakpoints, $point) - 1, null);
+
+    @media (max-width: $max) {
+      @content;
+    }
+  }
+
+  @else {
+    @error "Unknown breakpoint: #{$point}. Please use one of #{map-keys($breakpoints)}.";
+  }
+}

@@ -1,0 +1,134 @@
+/**
+ * Fonts
+*/
+
+@font-face {
+  font-family: 'Aspergit';
+  src: url('../fonts/Aspergit.woff2') format('woff2'),
+    url('../fonts/Aspergit.woff') format('woff'),
+    url('../fonts/Aspergit.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aspergit';
+  src: url('../fonts/AspergitItalic.woff2') format('woff2'),
+    url('../fonts/AspergitItalic.woff') format('woff'),
+    url('../fonts/AspergitItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aspergit';
+  src: url('../fonts/AspergitBoldItalic.woff2') format('woff2'),
+    url('../fonts/AspergitBoldItalic.woff') format('woff'),
+    url('../fonts/AspergitBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aspergit';
+  src: url('../fonts/AspergitLight.woff2') format('woff2'),
+    url('../fonts/AspergitLight.woff') format('woff'),
+    url('../fonts/AspergitLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aspergit';
+  src: url('../fonts/AspergitBold.woff2') format('woff2'),
+    url('../fonts/AspergitBold.woff') format('woff'),
+    url('../fonts/AspergitBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aspergit';
+  src: url('../fonts/AspergitLightItalic.woff2') format('woff2'),
+    url('../fonts/AspergitLightItalic.woff') format('woff'),
+    url('../fonts/AspergitLightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Futura Cyrillic';
+  src: url('../fonts/FuturaCyrillicLight.woff2') format('woff2'),
+    url('../fonts/FuturaCyrillicLight.woff') format('woff'),
+    url('../fonts/FuturaCyrillicLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Cyrillic Extra';
+  src: url('../fonts/../fonts/FuturaCyrillic-ExtraBold.woff2') format('woff2'),
+    url('../fonts/../fonts/FuturaCyrillic-ExtraBold.woff') format('woff'),
+    url('../fonts/../fonts/FuturaCyrillic-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Cyrillic';
+  src: url('../fonts/FuturaCyrillicHeavy.woff2') format('woff2'),
+    url('../fonts/FuturaCyrillicHeavy.woff') format('woff'),
+    url('../fonts/FuturaCyrillicHeavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Cyrillic Book';
+  src: url('../fonts/FuturaCyrillicBook.woff2') format('woff2'),
+    url('../fonts/FuturaCyrillicBook.woff') format('woff'),
+    url('../fonts/FuturaCyrillicBook.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Cyrillic';
+  src: url('../fonts/FuturaCyrillic-Bold.woff2') format('woff2'),
+    url('../fonts/FuturaCyrillic-Bold.woff') format('woff'),
+    url('../fonts/FuturaCyrillic-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Cyrillic Demi';
+  src: url('../fonts/FuturaCyrillic-Demi.woff2') format('woff2'),
+    url('../fonts/FuturaCyrillic-Demi.woff') format('woff'),
+    url('../fonts/FuturaCyrillic-Demi.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Cyrillic';
+  src: url('../fonts/FuturaCyrillicMedium.woff2') format('woff2'),
+    url('../fonts/FuturaCyrillicMedium.woff') format('woff'),
+    url('../fonts/FuturaCyrillicMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

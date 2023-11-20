@@ -1,0 +1,156 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Aspergit', sans-serif;
+    font-weight: $bold;
+}
+
+h1 {
+    @include breakpoint-up(lg) {
+        font-size: 113px;
+        line-height: 132px;
+    }
+
+    @include breakpoint-only(md) {
+        font-size: 90px;
+        line-height: 110px;
+    }
+
+    @include breakpoint-down(sm) {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+h2 {
+    letter-spacing: -0.03em;
+
+    @include breakpoint-up(lg) {
+        font-size: 94px;
+        line-height: 110px;
+    }
+
+    @include breakpoint-only(md) {
+        font-size: 70px;
+        line-height: 84px;
+    }
+
+    @include breakpoint-down(sm) {
+        font-size: 44px;
+        line-height: 58px;
+    }
+}
+
+h3 {
+    @include breakpoint-up(lg) {
+        font-size: 54px;
+        line-height: 77px;
+    }
+
+    @include breakpoint-only(md) {
+        font-size: 44px;
+        line-height: 63px;
+    }
+
+    @include breakpoint-down(sm) {
+        font-size: 34px;
+        line-height: 48px;
+    }
+}
+
+h4 {
+    @include breakpoint-up(lg) {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    @include breakpoint-only(md) {
+        font-size: 36px;
+        line-height: 41px;
+    }
+
+    @include breakpoint-down(sm) {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+h5 {
+    letter-spacing: -0.02em;
+
+    @include breakpoint-up(lg) {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    @include breakpoint-only(md) {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    @include breakpoint-down(sm) {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+.text {
+    font-family: 'Futura Cyrillic', sans-serif;
+    letter-spacing: -0.04em;
+    font-weight: $light;
+}
+
+.text--body {
+    @include breakpoint-up(lg) {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    @include breakpoint-only(md) {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    @include breakpoint-down(sm) {
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
+
+.text--sm {
+    @include breakpoint-up(lg) {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    @include breakpoint-only(md) {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    @include breakpoint-down(sm) {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+.cta {
+    display: block;
+    font-family: 'Aspergit', sans-serif;
+    font-weight: $bold;
+    letter-spacing: -0.03em;
+
+
+    @include breakpoint-up(lg) {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    @include breakpoint-down(md) {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+}
