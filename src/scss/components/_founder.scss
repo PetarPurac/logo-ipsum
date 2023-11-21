@@ -2,6 +2,7 @@
     padding-bottom: 134px;
     padding-top: 319px;
     position: relative;
+    margin-bottom: 210px;
 
     @include breakpoint-down(md) {
         padding-top: 130px;
