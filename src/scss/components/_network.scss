@@ -1,0 +1,229 @@
+.network {
+    padding-top: 285px;
+    overflow: hidden;
+}
+
+.network__title {
+    text-transform: uppercase;
+    margin-bottom: 68px;
+    max-width: 68.2%;
+    color: $white;
+}
+
+.network__socials-list {
+    position: relative;
+    height: 615px;
+    max-width: 1237px;
+    width: 100%;
+}
+
+.network__social-item {
+    position: absolute;
+}
+
+
+.network__social-link {
+    position: relative;
+    display: inline-block;
+
+    .animated-svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.network__social-link--discord {
+    @include breakpoint-down(xl) {
+        width: 279px;
+    }
+
+    @include breakpoint-down(md) {
+        width: 186px;
+    }
+}
+
+.network__social-link--github {
+    @include breakpoint-down(xl) {
+        width: 279px;
+    }
+
+    @include breakpoint-down(md) {
+        width: 186px;
+    }
+}
+
+.network__social-link--stack {
+    @include breakpoint-down(xl) {
+        width: 188px;
+    }
+
+    @include breakpoint-down(md) {
+        width: 125px;
+    }
+}
+
+.network__social-link--quora {
+    @include breakpoint-down(xl) {
+        width: 128px;
+    }
+
+    @include breakpoint-down(md) {
+        width: 85px;
+    }
+}
+
+.network__social-link--reddit {
+    @include breakpoint-down(xl) {
+        width: 145px;
+    }
+
+    @include breakpoint-down(md) {
+        width: 97px;
+    }
+}
+
+.network__social-link--youtube {
+    @include breakpoint-down(xl) {
+        width: 154px;
+    }
+
+    @include breakpoint-down(md) {
+        width: 102px;
+    }
+}
+
+.network__social-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.network__social-item--discord {
+    left: 0;
+    bottom: 14%;
+
+    .animated-svg {
+        color: $yellow;
+    }
+}
+
+.network__social-item--github {
+    left: 25%;
+    bottom: 39.8%;
+
+    .animated-svg {
+        color: $turquoise;
+    }
+
+    @include breakpoint-down(xl) {
+        left: 237px;
+        bottom: 34.8%;
+    }
+}
+
+.network__social-item--stack {
+    left: 55%;
+    bottom: 36.3%;
+
+    .animated-svg {
+        color: $orange;
+    }
+
+    @include breakpoint-down(xl) {
+        left: 518px;
+        bottom: 32.1%;
+    }
+}
+
+.network__social-item--quora {
+    left: 63%;
+    bottom: 8.3%;
+
+    .animated-svg {
+        color: $turquoise;
+    }
+
+    @include breakpoint-down(xl) {
+        left: 590px;
+        bottom: 11.3%;
+    }
+}
+
+.network__social-item--reddit {
+    left: 77%;
+    bottom: 0;
+
+    .animated-svg {
+        color: $pink;
+    }
+
+    @include breakpoint-down(xl) {
+        left: 717px;
+        bottom: 29px;
+    }
+}
+
+.network__social-item--youtube {
+    left: 84%;
+    bottom: 28%;
+
+    .animated-svg {
+        color: $yellow;
+    }
+
+    @include breakpoint-down(xl) {
+        left: 780px;
+        bottom: 25.5%;
+    }
+}
+
+
+.animated-svg {
+    pointer-events: none;
+    transition: 1s ease-in-out;
+    transition-property: transform;
+
+    path {
+
+        transition: fill 1s ease-in-out;
+    }
+}
+
+.network__social-link {
+
+    @include hover {
+        .animated-svg--octa {
+            transform: rotate(45deg);
+
+            path {
+                fill: currentColor !important;
+            }
+        }
+
+        .animated-svg--nine {
+            transform: rotate(40deg);
+
+            path {
+                fill: currentColor !important;
+            }
+        }
+
+        .animated-svg--seven {
+            transform: rotate(53.5deg);
+
+            path {
+                fill: currentColor !important;
+            }
+        }
+
+        .animated-svg--hexa {
+            transform: rotate(60deg);
+
+            path {
+                fill: currentColor !important;
+            }
+
+        }
+    }
+}
