@@ -2,6 +2,10 @@
     margin-bottom: 131px;
     padding-top: 25px;
     position: relative;
+
+    @include breakpoint-down(xl) {
+        padding-top: 170px;
+    }
 }
 
 .text-cards__title {
@@ -15,24 +19,37 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 150px 100px;
+
+    @include breakpoint-between(sm, md) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include breakpoint-down(sm) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 120px 100px;
+    }
 }
 
 .text-card {
-    &:nth-child(4) {
-        .text-card__title {
-            max-width: 50%;
+    @include breakpoint-up(xl) {
+        &:nth-child(4) {
+            .text-card__title {
+                max-width: 50%;
+            }
         }
-    }
 
-    &:nth-child(5) {
-        .text-card__title {
-            max-width: 50%;
+        &:nth-child(5) {
+            .text-card__title {
+                max-width: 50%;
+            }
         }
-    }
 
-    &:nth-child(6) {
-        .text-card__title {
-            max-width: 60%;
+        &:nth-child(6) {
+            .text-card__title {
+                max-width: 60%;
+            }
         }
     }
 }
@@ -53,8 +70,23 @@
 
 .text-cards__dots {
     position: absolute;
-    top: 42%;
-    right: 0;
+
+    @include breakpoint-up(xl) {
+        top: 42%;
+        right: 0;
+    }
+
+    @include breakpoint-between(xl, xxl) {
+        z-index: -1;
+        opacity: .1;
+    }
+
+    @include breakpoint-down(xl) {
+        top: 69%;
+        right: -20px;
+        z-index: -1;
+        opacity: .1;
+    }
 }
 
 .text-cards__hexa--sm {
@@ -75,4 +107,12 @@
     position: absolute;
     bottom: -27%;
     left: 6.4%;
+
+    @include breakpoint-between(sm, md) {
+        bottom: -12%;
+    }
+
+    @include breakpoint-down(sm) {
+        bottom: -7%;
+    }
 }
