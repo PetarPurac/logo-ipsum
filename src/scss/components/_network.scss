@@ -5,9 +5,16 @@
 
 .network__title {
     text-transform: uppercase;
-    margin-bottom: 68px;
-    max-width: 68.2%;
     color: $white;
+
+    @include breakpoint-up(md) {
+        max-width: 68.2%;
+        margin-bottom: 68px;
+    }
+
+    @include breakpoint-down(sm) {
+        margin-bottom: 40px;
+    }
 }
 
 .network__socials-list {
@@ -15,6 +22,10 @@
     height: 615px;
     max-width: 1237px;
     width: 100%;
+
+    @include breakpoint-down(sm) {
+        height: 400px;
+    }
 }
 
 .network__social-item {
@@ -35,60 +46,180 @@
 .network__social-link--discord {
     @include breakpoint-down(xl) {
         width: 279px;
+
+        .network__social-icon {
+            width: 50px;
+        }
     }
 
     @include breakpoint-down(md) {
-        width: 186px;
+        width: 200px;
+
+        .network__social-icon {
+            width: 40px;
+        }
+    }
+
+    @include breakpoint-down(sm) {
+        width: 160px;
+
+        .network__social-icon {
+            width: 32px;
+        }
+    }
+
+    @include breakpoint-down(xs) {
+        width: 120px;
+
+        .network__social-icon {
+            width: 24px;
+        }
     }
 }
 
 .network__social-link--github {
     @include breakpoint-down(xl) {
         width: 279px;
+
+        .network__social-icon {
+            width: 50px;
+        }
     }
 
     @include breakpoint-down(md) {
         width: 186px;
+
+        .network__social-icon {
+            width: 40px;
+        }
+    }
+
+    @include breakpoint-down(sm) {
+        width: 149px;
+
+        .network__social-icon {
+            width: 30px;
+        }
+    }
+
+    @include breakpoint-down(xs) {
+        width: 120px;
+
+        .network__social-icon {
+            width: 24px;
+        }
     }
 }
 
 .network__social-link--stack {
     @include breakpoint-down(xl) {
         width: 188px;
+
+        .network__social-icon {
+            width: 29px;
+        }
     }
 
     @include breakpoint-down(md) {
         width: 125px;
+
+        .network__social-icon {
+            width: 23px;
+        }
+    }
+
+    @include breakpoint-down(sm) {
+        width: 100px;
+
+        .network__social-icon {
+            width: 20px;
+        }
+    }
+
+    @include breakpoint-down(xs) {
+        width: 90px;
+
+        .network__social-icon {
+            width: 18px;
+        }
     }
 }
 
 .network__social-link--quora {
     @include breakpoint-down(xl) {
         width: 128px;
+
+        .network__social-icon {
+            width: 21px;
+        }
     }
 
     @include breakpoint-down(md) {
-        width: 85px;
+        width: 86px;
+
+        .network__social-icon {
+            width: 17px;
+        }
+    }
+
+    @include breakpoint-down(sm) {
+        width: 70px;
+
+        .network__social-icon {
+            width: 15px;
+        }
     }
 }
 
 .network__social-link--reddit {
     @include breakpoint-down(xl) {
         width: 145px;
+
+        .network__social-icon {
+            width: 25px;
+        }
     }
 
     @include breakpoint-down(md) {
         width: 97px;
+
+        .network__social-icon {
+            width: 20px;
+        }
+    }
+
+    @include breakpoint-down(sm) {
+        width: 77px;
+
+        .network__social-icon {
+            width: 16px;
+        }
     }
 }
 
 .network__social-link--youtube {
     @include breakpoint-down(xl) {
         width: 154px;
+
+        .network__social-icon {
+            width: 21px;
+        }
     }
 
     @include breakpoint-down(md) {
-        width: 102px;
+        width: 125px;
+
+        .network__social-icon {
+            width: 18px;
+        }
+    }
+
+    @include breakpoint-down(sm) {
+        width: 100px;
+
+        .network__social-icon {
+            width: 16px;
+        }
     }
 }
 
@@ -120,6 +251,25 @@
         left: 237px;
         bottom: 34.8%;
     }
+
+    @include breakpoint-down(md) {
+        left: 169px;
+        bottom: 28.8%;
+
+        .animated-svg {
+            transform: rotate(0deg);
+        }
+    }
+
+    @include breakpoint-down(sm) {
+        left: 140px;
+        bottom: 32.8%;
+    }
+
+    @include breakpoint-down(xs) {
+        left: 105px;
+        bottom: 27.8%;
+    }
 }
 
 .network__social-item--stack {
@@ -133,6 +283,29 @@
     @include breakpoint-down(xl) {
         left: 518px;
         bottom: 32.1%;
+    }
+
+    @include breakpoint-down(md) {
+        left: 339px;
+        bottom: 46.7%;
+
+        .animated-svg {
+            transform: rotate(-45deg);
+        }
+    }
+
+    @include breakpoint-down(sm) {
+        left: 278px;
+        bottom: 55%;
+    }
+
+    @include breakpoint-down(xs) {
+        left: 67px;
+        bottom: 55.6%;
+
+        .animated-svg {
+            transform: rotate(-52deg);
+        }
     }
 }
 
@@ -148,6 +321,25 @@
         left: 590px;
         bottom: 11.3%;
     }
+
+    @include breakpoint-down(md) {
+        left: 453px;
+        bottom: 40.8%;
+
+        .animated-svg {
+            transform: rotate(-45deg);
+        }
+    }
+
+    @include breakpoint-down(sm) {
+        left: 370px;
+        bottom: 46.8%;
+    }
+
+    @include breakpoint-down(xs) {
+        left: 215px;
+        bottom: 46.8%;
+    }
 }
 
 .network__social-item--reddit {
@@ -162,6 +354,29 @@
         left: 717px;
         bottom: 29px;
     }
+
+    @include breakpoint-down(md) {
+        left: 568px;
+        bottom: 67.7%;
+
+        .animated-svg {
+            transform: rotate(12deg);
+        }
+    }
+
+    @include breakpoint-down(sm) {
+        left: 466px;
+        bottom: 80.7%;
+    }
+
+    @include breakpoint-down(xs) {
+        left: 123px;
+        bottom: 76.3%;
+
+        .animated-svg {
+            transform: rotate(33deg);
+        }
+    }
 }
 
 .network__social-item--youtube {
@@ -175,6 +390,25 @@
     @include breakpoint-down(xl) {
         left: 780px;
         bottom: 25.5%;
+    }
+
+    @include breakpoint-down(md) {
+        left: 526px;
+        bottom: 46.9%;
+
+        .animated-svg {
+            transform: rotate(-13deg);
+        }
+    }
+
+    @include breakpoint-down(sm) {
+        left: 431px;
+        bottom: 54.9%;
+    }
+
+    @include breakpoint-down(xs) {
+        left: 175px;
+        bottom: 5.9%;
     }
 }
 
