@@ -28,7 +28,7 @@
     @include breakpoint-down(sm) {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
-        grid-gap: 120px 100px;
+        grid-gap: 80px 100px;
     }
 }
 
@@ -83,7 +83,7 @@
 
     @include breakpoint-down(xl) {
         top: 69%;
-        right: -20px;
+        right: 0;
         z-index: -1;
         opacity: .1;
     }
@@ -95,12 +95,28 @@
     top: -131px;
     right: -63px;
     transform: scale(0.59);
+
+    @include breakpoint-down(md) {
+        right: 39px;
+    }
+
+    @include breakpoint-down(xs) {
+        display: none;
+    }
 }
 
 .text-cards__hexa--lg {
     position: absolute;
     top: -88px;
     right: -27px;
+
+    @include breakpoint-down(md) {
+        right: 12px;
+    }
+
+    @include breakpoint-down(xs) {
+        display: none;
+    }
 }
 
 .text-cards__octaeder {
@@ -113,6 +129,7 @@
     }
 
     @include breakpoint-down(sm) {
-        bottom: -7%;
+        bottom: -12%;
+        opacity: .1;
     }
 }
