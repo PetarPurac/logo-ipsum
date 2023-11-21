@@ -1,15 +1,41 @@
-.network {
-    padding-top: 285px;
-    overflow: hidden;
+.network__top {
+    width: 100%;
+    height: 290px;
+    position: relative;
+}
+
+.network__dots {
+    position: absolute;
+    bottom: 35.5%;
+    left: 0;
+
+    @include breakpoint-down(xl) {
+        bottom: 20.5%;
+    }
+}
+
+.network__arrows {
+    position: absolute;
+    left: 70%;
+    bottom: 21px;
+}
+
+.network__atom {
+    bottom: 47.5%;
+    right: 4.9%;
+    position: absolute;
 }
 
 .network__title {
     text-transform: uppercase;
     color: $white;
 
+    @include breakpoint-up(xl) {
+        margin-bottom: 68px;
+    }
+
     @include breakpoint-up(md) {
         max-width: 68.2%;
-        margin-bottom: 68px;
     }
 
     @include breakpoint-down(sm) {
