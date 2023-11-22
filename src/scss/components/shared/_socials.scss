@@ -87,19 +87,12 @@
 }
 
 .banner__socials {
-    position: absolute;
-    top: 170px;
+    position: fixed;
+    top: 258px;
     right: 36px;
+    z-index: 10;
 
     .socials__list-item {
         margin-bottom: 21px;
     }
-}
-
-.socials--sticky {
-    position: fixed;
-    top: 86px;
-    right: 36px;
-    z-index: 3;
-
 }

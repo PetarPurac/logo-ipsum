@@ -96,6 +96,11 @@
         left: 35%;
     }
 
+    @include breakpoint-down(md) {
+        z-index: -1;
+        opacity: .4;
+    }
+
     @include breakpoint-between(sm, md) {
         left: 15%;
     }
@@ -108,5 +113,6 @@
     @include breakpoint-down(xs) {
         bottom: -18%;
         left: 10%;
+        opacity: .2;
     }
 }

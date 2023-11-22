@@ -10,12 +10,21 @@
     color: $white;
     margin-bottom: 57px;
     max-width: 64.9%;
+
+    @include breakpoint-down(xl) {
+        max-width: 78.9%;
+    }
 }
 
 .video__atom-nona {
     position: absolute;
     top: 113px;
     left: 6.82%;
+
+    @include breakpoint-down(xxxl) {
+        opacity: 0.2;
+        z-index: -1;
+    }
 }
 
 .video__titleholder {
@@ -39,10 +48,34 @@
     position: absolute;
     bottom: 0;
     right: 6.51%;
+
+    @include breakpoint-down(xxxl) {
+        opacity: 0.2;
+        z-index: -1;
+    }
 }
 
 
 .video__dots--blue {
     position: absolute;
     top: 96.7%;
+
+    @include breakpoint-down(xxxl) {
+        opacity: 0.2;
+        z-index: -1;
+    }
+}
+
+.video__video {
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.video__video-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }

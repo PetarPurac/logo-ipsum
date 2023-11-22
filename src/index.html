@@ -315,7 +315,9 @@
               <h2 class="video__title">Introduction to our workflow</h2>
               <svg class="video__hexa" xmlns="http://www.w3.org/2000/svg" width="62" height="62" fill="none"><path fill="#361281" stroke="#D5FF2F" stroke-miterlimit="10" stroke-width="1.5" d="M55.578 15.2198c-.3287-1.4775-1.3092-2.7265-2.6663-3.3969L33.2143 2.09371c-1.3957-.68938-3.0329-.68939-4.4286 0L9.08829 11.8229c-1.35714.6704-2.33755 1.9194-2.66634 3.3969L1.51118 37.2881c-.32375 1.4549.01844 2.9784.93328 4.1551L16.1481 59.069C17.0954 60.2873 18.5522 61 20.0954 61h21.8091c1.5433 0 3.0001-.7127 3.9474-1.931l13.7036-17.6258c.9149-1.1767 1.2571-2.7002.9333-4.1551L55.578 15.2198ZM39.6562 45.878c-.9474 1.2156-2.4025 1.9264-3.9437 1.9264h-9.4221c-1.5428 0-2.9993-.7123-3.9466-1.9301l-5.9761-7.6827c-.9152-1.1766-1.2578-2.7002-.9342-4.1553l2.1519-9.6761c.3287-1.4783 1.3098-2.728 2.6678-3.3982l8.5425-4.2161c1.3949-.6885 3.0308-.6885 4.4258 0l8.5424 4.2161c1.3581.6702 2.3391 1.9199 2.6679 3.3982l2.1512 9.6733c.324 1.4567-.0196 2.982-.937 4.159l-5.9898 7.6855Z"/></svg>
             </div>
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe id="videoPlayer" src="https://player.vimeo.com/video/104926724?h=c834f804fd&color=ff39f4&title=0&byline=0&sidedock=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="video__video">
+              <iframe class="video__video-item" id="videoPlayer" src="https://player.vimeo.com/video/104926724?h=c834f804fd&color=ff39f4&title=0&byline=0&sidedock=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <button id="playButton">Play Video</button>
           </div>
         </div>
@@ -429,6 +431,6 @@
         </div>
       </div>
     </footer>
-    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script defer src="https://player.vimeo.com/api/player.js"></script>
   </body>
 </html>
