@@ -13,15 +13,9 @@ const socials = {
 
             
             if (scrollPosition >= (sectionTop - 10)) {
-                // Set state to true or perform an action
                 this.socials.classList.add('socials--sticky')
-                console.log('Scroll position is equal to or greater than section top');
-                // Perform your action here
             } else {
                 this.socials.classList.remove('socials--sticky')
-                // Set state to false or perform an action
-                console.log('Scroll position is less than section top');
-                // Perform your action here
             }
         })
     }

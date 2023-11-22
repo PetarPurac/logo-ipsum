@@ -49,8 +49,25 @@
     max-width: 1237px;
     width: 100%;
 
+    @include breakpoint-down(xl) {
+        max-width: 954px;
+        margin: 0 auto;
+    }
+
+    @include breakpoint-between(sm, md) {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
     @include breakpoint-down(sm) {
         height: 400px;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    @include breakpoint-down(xs) {
+        max-width: 300px;
+        margin: 0 auto;
     }
 }
 
