@@ -16,7 +16,7 @@
 }
 
 .banner__wrap {
-    @include breakpoint-up(xl) {
+    @include breakpoint-between(xl, xxxl) {
         padding-right: 60px;
     }
 }

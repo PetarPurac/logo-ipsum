@@ -7,6 +7,13 @@
     <meta name="keywords" content="Logo Ipsum, Logo Ipsum Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Petar Purać">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to Content</a>
@@ -17,7 +24,7 @@
             <img class="header__logo-item" src="./images/content/logo.png" alt="company logo">
           </a>
           <button class="header__hamburger js-header-hamburger" aria-expanded="false" aria-label="Main Menu">
-            <span class="sr-only">Toggle Navigation</span>
+            <span class="sr-only">Toggle Navigation Menu</span>
             <svg width="40" height="40" viewBox="0 0 100 100">
               <path class="header__hamburger-line header__hamburger-line--first line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
               <path class="header__hamburger-line header__hamburger-line--second line line2" d="M 20,50 H 80" />
@@ -321,20 +328,21 @@
             </div>
             <div class="video__video">
               <img src="./images/content/fallback.png" alt="fallback image" class="video__fallback">
-              <button class="video__btn js-video-btn">
-                <div class="video__btn-holder">
+              <button class="video__btn js-video-btn" aria-label="Button to open video popup">
+                <span class="video__btn-holder">
                   <svg class="video__btn-play" xmlns="http://www.w3.org/2000/svg" width="15" height="24" fill="none"><path fill="#fff" d="M15 12.0635-5e-8 23.5484 9.5e-7.578613 15 12.0635Z"/></svg>
-                </div>
+                </span>
               </button>
             </div>
             <div class="video__popup js-video-popup">
               <div class="wrap wrap--sm">
                 <div class="video__popup-holder">
-                  <button class="video__popup-close js-close-btn">
-                    <div class="video__popup-close-holder">
+                  <button class="video__popup-close js-close-btn" aria-label="Button to close video popup">
+                    <span class="video__popup-close-holder">
                       <span class="video__popup-close-bar"></span>
+                      <span class="sr-only">Close video popup</span>
                       <span class="video__popup-close-bar"></span>
-                    </div>
+                    </span>
                   </button>
                   <iframe class="video__popup-video" id="videoPlayer" src="https://player.vimeo.com/video/104926724?h=c834f804fd&color=ff39f4&title=0&byline=0&sidedock=0&portrait=0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                 </div>

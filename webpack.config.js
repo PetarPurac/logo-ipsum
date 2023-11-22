@@ -23,7 +23,6 @@ const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin(
   hash: false,
   filename: template.output,
   template: path.resolve(environment.paths.source, template.input),
-  favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
 }));
 
 module.exports = {
@@ -78,13 +77,10 @@ module.exports = {
         minimizer: {
           implementation: ImageMinimizerPlugin.imageminMinify,
           options: {
-            // Lossless optimization with custom option
-            // Feel free to experiment with options for better result for you
             plugins: [
               ['gifsicle', { interlaced: true }],
               ['jpegtran', { progressive: true }],
               ['optipng', { optimizationLevel: 5 }],
-              // Svgo configuration here https://github.com/svg/svgo#configuration
               [
                 'svgo',
                 {
@@ -129,8 +125,8 @@ module.exports = {
           },
         },
         {
-          from: path.resolve(environment.paths.source, 'videos'),
-          to: path.resolve(environment.paths.output, 'videos'),
+          from: path.resolve(environment.paths.source, 'images', 'favicon'),
+          to: path.resolve(environment.paths.output, ''),
           toType: 'dir',
           globOptions: {
             ignore: ['*.DS_Store', 'Thumbs.db'],

@@ -89,7 +89,7 @@
 .banner__socials {
     position: fixed;
     top: 258px;
-    right: 25px;
+    right: 37px;
     z-index: 10;
     transition: .3s ease-in;
     transition-property: background-color padding;
@@ -99,6 +99,10 @@
         &:not(:last-child) {
             margin-bottom: 21px;
         }
+    }
+
+    @include breakpoint-down(xxxl) {
+        right: 25px;
     }
 
     @include breakpoint-down(xl) {

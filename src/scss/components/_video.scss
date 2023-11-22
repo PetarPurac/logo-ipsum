@@ -123,7 +123,7 @@
 
 .video__btn-holder {
     position: relative;
-
+    display: block;
     border-radius: 50%;
     background: transparent;
     transition: transform .3s ease;
@@ -286,6 +286,7 @@
 .video__popup-close-holder {
     position: relative;
     transition: transform .6s ease;
+    display: block;
 
     @include breakpoint-up(md) {
         width: 40px;
