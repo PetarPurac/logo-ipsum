@@ -85,3 +85,21 @@
     width: 24px;
     height: 24px;
 }
+
+.banner__socials {
+    position: absolute;
+    top: 180px;
+    right: 36px;
+
+    .socials__list-item {
+        margin-bottom: 24px;
+    }
+}
+
+.socials--sticky {
+    position: fixed;
+    top: 86px;
+    right: 36px;
+    z-index: 3;
+
+}
