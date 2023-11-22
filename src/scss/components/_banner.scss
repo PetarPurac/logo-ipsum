@@ -22,7 +22,6 @@
 }
 
 .banner__title {
-    color: $white;
     text-transform: uppercase;
 
     @include breakpoint-up(md) {
@@ -52,7 +51,6 @@
 
 .banner__text {
     text-align: left;
-    color: $white;
 
     @include breakpoint-up(md) {
         margin-bottom: 29px;

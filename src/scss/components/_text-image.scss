@@ -24,12 +24,9 @@
 .text-image__title {
     text-transform: uppercase;
     margin-bottom: 30px;
-    color: $white;
 }
 
 .text-image__desc {
-    color: $white;
-
     &:not(:last-child) {
         margin-bottom: 30px;
     }

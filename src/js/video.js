@@ -2,7 +2,8 @@ import helpers from "./helpers";
 
 const video = {
     videoPopup: document.querySelector('.js-video-popup'),
-
+    isPlaying: false,
+    
     init: function () {
         this.handleVideoPlay();
     },
@@ -12,7 +13,7 @@ const video = {
         document.addEventListener("DOMContentLoaded", function() {
             const playButton = document.querySelector(".js-video-btn");
             const closePopupBtn = document.querySelector('.js-close-btn');
-            let isPlaying = false;
+
             closePopupBtn.addEventListener('click', () => {
                 videoPopup.classList.remove('video__popup--active')
                 isPlaying = false;
@@ -30,6 +31,14 @@ const video = {
                     helpers.enableScroll()
                 }
             });
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    videoPopup.classList.remove('video__popup--active')
+                    isPlaying = false;
+                    helpers.enableScroll()
+                }
             });
     }
 }

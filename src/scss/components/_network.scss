@@ -28,7 +28,6 @@
 
 .network__title {
     text-transform: uppercase;
-    color: $white;
 
     @include breakpoint-up(xl) {
         margin-bottom: 68px;

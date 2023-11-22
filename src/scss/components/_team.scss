@@ -3,7 +3,6 @@
 }
 
 .team__title {
-    color: $white;
     margin-bottom: 57px;
     text-transform: uppercase;
 }
@@ -53,12 +52,7 @@
 }
 
 .team__card-name--white {
-    color: $white;
     margin-bottom: 20px;
-}
-
-.team__card-role {
-    color: $white;
 }
 
 .team-card-role--coo {
@@ -88,8 +82,6 @@
 }
 
 .team__message {
-    color: $white;
-
     @include breakpoint-up(md) {
         max-width: 51%;
     }

@@ -68,10 +68,6 @@
     }
 }
 
-.footer__nav-link {
-    color: $white;
-}
-
 .footer__dots {
     @include breakpoint-up(xl) {
         position: relative;
@@ -96,7 +92,6 @@
 }
 
 .footer__bottom-text {
-    color: $white;
     text-align: center;
     position: relative;
 

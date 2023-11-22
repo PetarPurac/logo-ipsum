@@ -111,8 +111,6 @@
 }
 
 .nav__list-link {
-    color: $white;
-
     @include breakpoint-down(md) {
         color: $purple;
         font-weight: $normal;

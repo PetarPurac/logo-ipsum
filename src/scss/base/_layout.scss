@@ -101,6 +101,11 @@ html {
         position: absolute;
     }
 
+    &::selection {
+        background-color: $yellow;
+        color: $purple;
+    }
+
     @include hover {
         transform: translateY(-5px);
     }
@@ -131,6 +136,20 @@ html {
 
 .text--yellow {
     color: $yellow;
+
+    &::selection {
+        background-color: $yellow;
+        color: $purple;
+    }
+}
+
+.text--white {
+    color: $white;
+
+    &::selection {
+        background-color: $gray;
+        color: $purple;
+    }
 }
 
 .arrows {
@@ -144,12 +163,4 @@ html {
     margin: 0;
     height: 100%;
     overflow: hidden
-}
-
-#my-scrollbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }
