@@ -15,6 +15,12 @@
     }
 }
 
+.banner__wrap {
+    @include breakpoint-up(xl) {
+        padding-right: 60px;
+    }
+}
+
 .banner__title {
     color: $white;
     text-transform: uppercase;

@@ -4,8 +4,13 @@
     position: relative;
     margin-bottom: 210px;
 
+    @include breakpoint-down(xl) {
+        margin-bottom: 140px;
+    }
+
     @include breakpoint-down(md) {
         padding-top: 130px;
+        margin-bottom: 80px;
     }
 }
 

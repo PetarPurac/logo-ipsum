@@ -17,6 +17,7 @@ const helpers = {
 
         (isTouchDevice && isMaxWidthMobile) ? this.html.classList.add('touch-device') : this.html.classList.add('no-touch-device');
 	},
+
 	disableScroll: function() {
 		if (!this.isScrollDisabled) {
 			this.body.classList.add(this.disabledScrollClass);
@@ -24,11 +25,21 @@ const helpers = {
 		}
 	},
 
-	// Enable back window scroll when closing the opened overlays
 	enableScroll: function() {
 		this.body.classList.remove(this.disabledScrollClass);
 		this.isScrollDisabled = false;
 	},
+
+	debounce: function(func, delay) {
+		let timeoutId;
+		return function (...args) {
+			const context = this;
+			clearTimeout(timeoutId);
+			timeoutId = setTimeout(() => {
+				func?.apply(context, args);
+			}, delay);
+		};
+	}
 
 }
 

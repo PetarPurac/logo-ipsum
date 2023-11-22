@@ -2,7 +2,7 @@
     padding-top: 127px;
     margin-bottom: 69px;
     position: relative;
-    padding-bottom: 69px;
+    padding-bottom: 185px;
 }
 
 .video__title {
@@ -25,6 +25,10 @@
         opacity: 0.2;
         z-index: -1;
     }
+
+    @include breakpoint-down(xl) {
+        display: none;
+    }
 }
 
 .video__titleholder {
@@ -36,12 +40,21 @@
     position: relative;
     top: 47px;
     left: 11px;
+
+    @include breakpoint-down(md) {
+        display: none;
+    }
 }
 
 .video__dots--red {
     position: absolute;
     top: 0;
     right: 0;
+
+    @include breakpoint-down(sm) {
+        opacity: .3;
+        z-index: -1;
+    }
 }
 
 .video__atom-octa {

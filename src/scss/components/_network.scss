@@ -283,11 +283,13 @@
 }
 
 .network__social-item--github {
-    left: 25%;
-    bottom: 39.8%;
-
     .animated-svg {
         color: $turquoise;
+    }
+
+    @include breakpoint-up(xl) {
+        left: 25%;
+        bottom: 40.8%;
     }
 
     @include breakpoint-down(xl) {
@@ -316,11 +318,13 @@
 }
 
 .network__social-item--stack {
-    left: 55%;
-    bottom: 36.3%;
-
     .animated-svg {
         color: $orange;
+    }
+
+    @include breakpoint-up(xl) {
+        left: 54%;
+        bottom: 37.3%;
     }
 
     @include breakpoint-down(xl) {
@@ -353,11 +357,13 @@
 }
 
 .network__social-item--quora {
-    left: 63%;
-    bottom: 8.3%;
-
     .animated-svg {
         color: $turquoise;
+    }
+
+    @include breakpoint-up(xl) {
+        left: 62.2%;
+        bottom: 9.3%;
     }
 
     @include breakpoint-down(xl) {
@@ -386,11 +392,13 @@
 }
 
 .network__social-item--reddit {
-    left: 77%;
-    bottom: 0;
-
     .animated-svg {
         color: $pink;
+    }
+
+    @include breakpoint-up(xl) {
+        left: 76%;
+        bottom: 1%;
     }
 
     @include breakpoint-down(xl) {
@@ -423,11 +431,13 @@
 }
 
 .network__social-item--youtube {
-    left: 84%;
-    bottom: 28%;
-
     .animated-svg {
         color: $yellow;
+    }
+
+    @include breakpoint-up(xl) {
+        left: 83%;
+        bottom: 29%;
     }
 
     @include breakpoint-down(xl) {

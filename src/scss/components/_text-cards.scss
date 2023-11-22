@@ -143,3 +143,13 @@
         opacity: .1;
     }
 }
+
+.text-cards__octa-top {
+    position: absolute;
+    top: 3.3%;
+    right: 7.2%;
+
+    @include breakpoint-down(sm) {
+        top: 12.2%;
+    }
+}
