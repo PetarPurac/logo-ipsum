@@ -1,10 +1,48 @@
 .video {
-    padding-top: 143px;
+    padding-top: 127px;
     margin-bottom: 69px;
+    position: relative;
+    padding-bottom: 69px;
 }
 
 .video__title {
     text-transform: uppercase;
     color: $white;
     margin-bottom: 57px;
+    max-width: 64.9%;
+}
+
+.video__atom-nona {
+    position: absolute;
+    top: 113px;
+    left: 6.82%;
+}
+
+.video__titleholder {
+    display: flex;
+    position: relative;
+}
+
+.video__hexa {
+    position: relative;
+    top: 47px;
+    left: 11px;
+}
+
+.video__dots--red {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.video__atom-octa {
+    position: absolute;
+    bottom: 0;
+    right: 6.51%;
+}
+
+
+.video__dots--blue {
+    position: absolute;
+    top: 96.7%;
 }
