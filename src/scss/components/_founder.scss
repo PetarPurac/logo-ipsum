@@ -27,6 +27,10 @@
     }
 }
 
+.founder__content {
+    overflow: hidden;
+}
+
 .founder__img {
     width: 458px;
     position: relative;
@@ -117,4 +121,5 @@
     bottom: 1.4%;
     right: 6.3%;
     transform: scale(0.8);
+    // animation: rotateHexagon 5s ease infinite;
 }

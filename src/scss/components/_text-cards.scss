@@ -128,6 +128,8 @@
     bottom: -27%;
     left: 6.4%;
 
+    animation: rotateAtomNona 8s infinite linear;
+
     @include breakpoint-between(sm, md) {
         bottom: -12%;
     }

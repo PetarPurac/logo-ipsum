@@ -55,7 +55,7 @@
         background-color: $yellow;
         z-index: 3;
         transition-property: left;
-        transition: 2s ease;
+        transition: 2s ease 1s;
     }
 
 
@@ -64,7 +64,7 @@
             left: 200%;
             z-index: 3;
             transition-property: left;
-            transition: 2s ease;
+            transition: 2s ease 1s;
         }
 
     }
@@ -79,7 +79,6 @@
     background-size: 200% 100%;
     background-position: 100%;
     position: relative;
-    // animation: banner-heading-ani 2.1s ease-in-out 1 forwards;
 
     &.aos-animate {
         background-position: 0 100%;
@@ -87,13 +86,6 @@
 }
 
 [data-aos="arrows"] {
-    svg {
-        &:first-child {}
-
-        &:nth-child(2) {}
-
-        &:nth-child(3) {}
-    }
 
     &.aos-animate {
         svg {

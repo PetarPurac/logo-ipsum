@@ -52,7 +52,7 @@
     position: absolute;
     top: 16.9%;
     right: 5.2%;
-    animation: rotateAtomNona 8s infinite linear;
+    animation: rotateAtomHexagon 6s infinite linear;
 
     @include breakpoint-down(sm) {
         top: unset;

@@ -14,3 +14,6 @@ video.init();
 
 import animations from './animations';
 animations.init();
+
+import observer from './observer';
+observer.init();
