@@ -8,13 +8,10 @@ const socials = {
         this.handleSocialsExpand();
     },
 
-    handleSocialsPosition: function() {
-        
-        const sectionTop = this.socials.offsetTop;
+    handleSocialsPosition: function() {        
         window.addEventListener('scroll', () => {
-            const scrollPosition = window.scrollY || window.pageYOffset;
+            const scrollPosition = window.scrollY;
 
-            
             if (scrollPosition >= 50) {
                 this.socials.classList.add('socials--sticky')
             } else {

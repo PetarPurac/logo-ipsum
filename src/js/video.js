@@ -2,44 +2,43 @@ import helpers from "./helpers";
 
 const video = {
     videoPopup: document.querySelector('.js-video-popup'),
+    playButton : document.querySelector('.js-video-btn'),
+    closePopupBtn: document.querySelector('.js-close-btn'),
     isPlaying: false,
     
     init: function () {
         this.handleVideoPlay();
+        this.handleCloseVideoPopup();
     },
 
     handleVideoPlay: function () {
-        const videoPopup = document.querySelector('.js-video-popup');
-        document.addEventListener("DOMContentLoaded", function() {
-            const playButton = document.querySelector(".js-video-btn");
-            const closePopupBtn = document.querySelector('.js-close-btn');
-
-            closePopupBtn.addEventListener('click', () => {
-                videoPopup.classList.remove('video__popup--active')
-                isPlaying = false;
+        this.playButton?.addEventListener("click", () => {
+            if(!this.isPlaying) {
+                this.isPlaying = true;
+                this.videoPopup.classList.add('video__popup--active');
+                helpers.disableScroll()
+            }else {
+                this.videoPopup.classList.remove('video__popup--active')
+                this.isPlaying = false;
                 helpers.enableScroll()
-            })
-          
-            playButton?.addEventListener("click", function() {
-                if(!isPlaying) {
-                    isPlaying = true;
-                    videoPopup.classList.add('video__popup--active');
-                    helpers.disableScroll()
-                }else {
-                    videoPopup.classList.remove('video__popup--active')
-                    isPlaying = false;
-                    helpers.enableScroll()
-                }
-            });
-            });
+            }
+        });
+    },
 
-            document.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape') {
-                    videoPopup.classList.remove('video__popup--active')
-                    isPlaying = false;
-                    helpers.enableScroll()
-                }
-            });
+    handleCloseVideoPopup: function() {
+        this.closePopupBtn.addEventListener('click', () => {
+            this.videoPopup.classList.remove('video__popup--active')
+            this.isPlaying = false;
+            helpers.enableScroll()
+        })
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                this.videoPopup.classList.remove('video__popup--active')
+                this.isPlaying = false;
+                helpers.enableScroll()
+            }
+        });
     }
 }
 
