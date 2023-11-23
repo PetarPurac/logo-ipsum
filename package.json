@@ -65,6 +65,7 @@
   },
   "target": "web",
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "focus-trap": "^7.5.4"
   }
 }

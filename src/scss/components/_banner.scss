@@ -98,7 +98,7 @@
     animation: rotateHexagon 2s infinite linear;
 
     @include breakpoint-down(md) {
-        top: 0;
+        display: none;
     }
 }
 

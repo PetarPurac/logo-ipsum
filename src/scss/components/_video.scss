@@ -61,6 +61,7 @@
     position: absolute;
     bottom: 0;
     right: 6.51%;
+    animation: rotateAtomNona 6s infinite linear;
 
     @include breakpoint-down(xxxl) {
         opacity: 0.2;
