@@ -22,7 +22,6 @@ const video = {
                 this.isPlaying = true;
                 this.videoPopup.classList.add('video__popup--active');
                 helpers.disableScroll()
-                vimeoPlayer.play();
             }else {
                 this.videoPopup.classList.remove('video__popup--active')
                 this.isPlaying = false;
