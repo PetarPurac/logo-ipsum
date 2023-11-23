@@ -1,20 +1,7 @@
 /**
  * Helper mixins
 */
-
-// Clearfix
-// http://www.cssmojo.com/latest_new_clearfix_so_far/
-// Other clearfix options: https://github.com/stubbornella/oocss/blob/master/oocss/src/components/utils/_clearfix-me.scss
 @import 'variables';
-
-
-@mixin clearfix {
-  &::after {
-    clear: both;
-    content: '';
-    display: table;
-  }
-}
 
 // Text selection
 @mixin text-selection($color-selection, $color-selection-bg) {

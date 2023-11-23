@@ -11,6 +11,7 @@ $light: 300;
 $regular: 400;
 $normal: 500;
 $bold: 700;
+
 /* Breakpoints */
 $breakpoints: (
     xs: 576px,
@@ -21,8 +22,7 @@ $breakpoints: (
     xxl: 1700px,
     xxxl: 1800px
 );
-/* Paths */
-/* Grid setup */
+
 /* Colour palette */
 $black: #000;
 $white: #fff;
@@ -32,5 +32,3 @@ $yellow: #D5FF2F;
 $pink: #FF2473;
 $orange: #FF6F1F;
 $turquoise: #54F2F2;
-
-/* Components */
