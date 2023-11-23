@@ -1,0 +1,158 @@
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes it-zoom {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+[data-aos="image-overlay"] {
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: $yellow;
+        z-index: 3;
+        transition-property: left;
+        transition: 2s ease;
+    }
+
+
+    &.aos-animate {
+        &::before {
+            left: 200%;
+            z-index: 3;
+            transition-property: left;
+            transition: 2s ease;
+        }
+
+    }
+}
+
+[data-aos="yellow-text"] {
+    background: -webkit-gradient(linear, left top, right top, from(#1a1a1a), color-stop(50%, #1a1a1a), color-stop(50%, #ccc)) no-repeat 0 0;
+    background: linear-gradient(to right, #D5FF2F, #D5FF2F 50%, #ccc 50%) no-repeat 0 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    background-size: 200% 100%;
+    background-position: 100%;
+    position: relative;
+    // animation: banner-heading-ani 2.1s ease-in-out 1 forwards;
+
+    &.aos-animate {
+        background-position: 0 100%;
+    }
+}
+
+[data-aos="arrows"] {
+    svg {
+        &:first-child {}
+
+        &:nth-child(2) {}
+
+        &:nth-child(3) {}
+    }
+
+    &.aos-animate {
+        svg {
+            &:first-child {
+                transform: translateX(20px);
+            }
+
+            &:nth-child(2) {
+                transform: translateX(20px);
+
+            }
+
+            &:nth-child(3) {
+                transform: translateX(20px);
+            }
+        }
+    }
+}
+
+[data-aos="quotemarks"] {
+    path {
+        fill: #fff;
+    }
+
+    &.aos-animate {
+        path {
+            fill: #D5FF2F;
+        }
+    }
+}
+
+
+@keyframes rotateHexagon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateAtomHexagon {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(60deg);
+
+    }
+}
+
+@keyframes rotateAtomNona {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}

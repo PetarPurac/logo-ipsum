@@ -23,6 +23,8 @@
 
 .banner__title {
     text-transform: uppercase;
+    opacity: 0;
+    animation: 0.6s slideInFromLeft ease-in-out forwards;
 
     @include breakpoint-up(md) {
         padding-left: 60px;
@@ -34,10 +36,17 @@
     }
 }
 
+.banner__contentholder {
+    overflow: hidden;
+}
+
 .banner__content {
     margin-left: auto;
     width: fit-content;
     max-width: 40.5%;
+    overflow: hidden;
+    opacity: 0;
+    animation: 0.4s slideInFromBottom 0.2s ease-in-out forwards;
 
     @include breakpoint-between(sm, md) {
         max-width: 54.5%;
@@ -84,8 +93,9 @@
 
 .banner__hexaeder {
     position: absolute;
-    top: -1%;
+    top: 1%;
     left: 50%;
+    animation: rotateHexagon 2s infinite linear;
 
     @include breakpoint-down(md) {
         top: 0;
@@ -95,6 +105,7 @@
 .banner__atom-hexaeder {
     position: absolute;
     bottom: 5%;
+    animation: rotateAtomHexagon 6s infinite linear;
 
     @include breakpoint-up(md) {
         left: 35%;

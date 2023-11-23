@@ -11,3 +11,6 @@ socials.init();
 
 import video from './video';
 video.init();
+
+import animations from './animations';
+animations.init();
