@@ -29,15 +29,3 @@ $ npm run production
 ```sh
 $ npm run watch
 ```
-
-## Tools used for optimising assets
-
-### For SVG optimisation:
-```sh
-https://jakearchibald.github.io/svgomg/
-```
-
-### For JPG/PNG optimisation:
-```sh
-https://tinypng.com/
-```
